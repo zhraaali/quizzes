@@ -2,16 +2,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Cardslide.css'
-
+import newsimg from './../../assets/images/images.png'
+import newsimg2 from './../../assets/images/19197156.jpg'
+import newsimg3 from './../../assets/images/heroimg.jpg'
 import { faTurnUp } from "@fortawesome/free-solid-svg-icons";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Card from "../Card/Card";
 const Cardslide = (props) => {
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay:true,
         autoplayspeed:2,
@@ -45,66 +48,24 @@ const Cardslide = (props) => {
   return (
     <div className='React-slide'>
         <Slider {...settings}>
-    <div className='box'>
-    <div className="work_card" key={props.id}    >
-                      <div className="work_thumbnail">
-                        <img src={props.img} alt="" className="work_img" />
-                        <div className="work_mask"></div>
-                      </div>
-
-                      <span className="work_category">{props.title}</span>
-                      <div className="work_title">
-                        <h3 className="" style={{color:'#ffbe00'}}>{props.title}</h3>
-                        <p className="" style={{}}><FontAwesomeIcon icon={faTurnUp} style={{color:"#ffbe00"}} /> Difficulty {props.difficulty}</p>
-                        <p className=""> <FontAwesomeIcon icon={faQuestion} style={{color:'#ffbe00'}}/> Number of questions {props.question}</p>
-                      </div>
-                    </div>
-    </div>
-    <div className='box'>
-    <div className="work_card" key={props.id}    >
-                      <div className="work_thumbnail">
-                        <img src={props.img} alt="" className="work_img" />
-                        <div className="work_mask"></div>
-                      </div>
-
-                      <span className="work_category">{props.title}</span>
-                      <div className="work_title">
-                        <h3 className="" style={{color:'#ffbe00'}}>{props.title}</h3>
-                        <p className="" style={{}}><FontAwesomeIcon icon={faTurnUp} style={{color:"#ffbe00"}} /> Difficulty {props.difficulty}</p>
-                        <p className=""> <FontAwesomeIcon icon={faQuestion} style={{color:'#ffbe00'}}/> Number of questions {props.question}</p>
-                      </div>
-                    </div>
-    </div>
-    <div className='box'>
-    <div className="work_card" key={props.id}    >
-                      <div className="work_thumbnail">
-                        <img src={props.img} alt="" className="work_img" />
-                        <div className="work_mask"></div>
-                      </div>
-
-                      <span className="work_category">{props.title}</span>
-                      <div className="work_title">
-                        <h3 className="" style={{color:'#ffbe00'}}>{props.title}</h3>
-                        <p className="" style={{}}><FontAwesomeIcon icon={faTurnUp} style={{color:"#ffbe00"}} /> Difficulty {props.difficulty}</p>
-                        <p className=""> <FontAwesomeIcon icon={faQuestion} style={{color:'#ffbe00'}}/> Number of questions {props.question}</p>
-                      </div>
-                    </div>
-    </div>
-    <div className='box'>
-    <div className="work_card" key={props.id}    >
-                      <div className="work_thumbnail">
-                        <img src={props.img} alt="" className="work_img" />
-                        <div className="work_mask"></div>
-                      </div>
-
-                      <span className="work_category">{props.title}</span>
-                      <div className="work_title">
-                        <h3 className="" style={{color:'#ffbe00'}}>{props.title}</h3>
-                        <p className="" style={{}}><FontAwesomeIcon icon={faTurnUp} style={{color:"#ffbe00"}} /> Difficulty {props.difficulty}</p>
-                        <p className=""> <FontAwesomeIcon icon={faQuestion} style={{color:'#ffbe00'}}/> Number of questions {props.question}</p>
-                      </div>
-                    </div>
-    </div>
+        <div>
+        <Card img={newsimg}
+            title="zhraa"
+            title1="ali"
+            difficulty='easy'
+            question='quiz'/>
+        </div>
+        <Card img={newsimg2}
+            title="zhraa"
+            title1="ali"
+            difficulty='easy'
+            question='quiz'/>
+        <Card img={newsimg3}
+            title="zhraa"
+            title1="ali"
+            difficulty='easy'
+            question='quiz'/>
+    
     
   </Slider>
     </div>

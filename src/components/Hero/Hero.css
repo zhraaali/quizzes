@@ -53,6 +53,20 @@
    background-color: var(--word-color);
 }
 
+.zh-hero .zh-quiz-time h1{
+   /* color: #fff; */
+   animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+   0%   {color: #fff;}
+   /* 25%  {color: yellow;} */
+   50%  {color: var(--word-color);}
+   /* 100% {color: var(--main-color);} */
+ }
+
 @media (max-width:750px){
    .zh-hero img{
        display: none;
