@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         
     </div>
-    <p className='footer-copy'>Copy right @Xpro 2023 All Rights Reserved.</p>
+    
     </div>
   )
 }

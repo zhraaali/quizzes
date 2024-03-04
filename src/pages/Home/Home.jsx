@@ -6,7 +6,10 @@ import News from '../../components/News/News'
 import Footer from '../../components/Footer/Footer'
 
 import Trending from '../../components/Trending/Trending'
-import { Helmet } from 'react-helmet'
+import Container from '../../components/Container/Container'
+import Categories from '../../components/Categories/Categories'
+import Categorycontainer from '../../components/Categorycontainer/Categorycontainer'
+
 
 
 const Home = () => {
@@ -37,7 +40,11 @@ const Home = () => {
             title1="ali"
             difficulty='easy'
             question='quiz'/> */}
+
+      {/* <Categories/> */}
+      <Categorycontainer/>
       <Trending/>
+      <Container/>
       <Footer/>
     </>
   )
